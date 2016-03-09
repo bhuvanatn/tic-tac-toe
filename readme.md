@@ -1,5 +1,6 @@
 # Project 0
-## By Bhuvana
-##Tic Tac Toe
+
+##Tic Tac Toe  
+# By Bhuvana
 Paragraph to test _italics_ etc
-<h1> https://bhuvanatn.github.io/tic-tac-toe/</h1>
+<h2> https://bhuvanatn.github.io/tic-tac-toe/</h2>

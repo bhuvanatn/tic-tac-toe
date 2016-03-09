@@ -1,0 +1,68 @@
+
+table {
+  border : 1.5vh solid white;
+  width : 50%;
+  left: 37%;
+  top: 25%;
+  height: 45vh;
+  width: 25vw;
+  position: absolute;
+  justify-content: center;
+  border-radius: 4vh;
+   box-shadow: 10px 10px;
+}
+h1{
+  font-size: 8vh;
+  color : white;
+  text-align: center;
+}
+body{
+    background-image: url("../img/background.jpg");
+}
+td {
+  border: 1vh solid white;
+
+}
+button {
+/*display: inline-block;;*/
+height: 12vh;
+width: 7vw;
+background: #2C2C2C;
+position: relative;
+border-radius: 3vh;
+ opacity: 0.5;
+
+}
+.reset {
+  height : 6vh;
+  width : 20vh;
+  text-align: center;
+  font-size: 3vh;
+  color : white;
+  background: #2C2C2C;;
+  position: absolute;
+  right: 20%;
+  bottom : 30%;
+  border : 1vh solid white;
+  border-radius: 10vh;
+  padding-top: 2vh;
+   opacity: 0.5;
+}
+#winner{
+  position:absolute;
+  right: 42%;
+  bottom: 10%;
+  height : 4vh;
+  width : 15vw;
+  text-align: center;
+  font-size: 6vh;
+  color : white;
+  padding-top: 2vh;
+  font-weight: bold;
+  padding-bottom: 3vh;
+  background: #2C2C2C;
+   opacity: 0.5;
+   border-radius: 10vh;
+
+
+}

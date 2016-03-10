@@ -1,6 +1,8 @@
 $(document).ready(function() {
     var $moveCount = 0;
     var $move = true;
+    $("#winner").hide();
+
     var playerTurn = playerTurn || "x";
     $("button").on('click', function() {
         $moveCount++;
@@ -87,6 +89,7 @@ $(document).ready(function() {
         });
         $moveCount = 0;
         $move = true;
+        $("#winner").hide();
         $("#winner").text('');
 
     };

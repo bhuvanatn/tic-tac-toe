@@ -50,6 +50,7 @@ border-radius: 3vh;
 }
 #winner{
   position:absolute;
+  /*display: block !important;*/
   right: 42%;
   bottom: 10%;
   height : 4vh;
@@ -59,7 +60,7 @@ border-radius: 3vh;
   color : white;
   padding-top: 2vh;
   font-weight: bold;
-  padding-bottom: 3vh;
+  padding-bottom: 5vh;
   background: #2C2C2C;
    opacity: 0.5;
    border-radius: 10vh;

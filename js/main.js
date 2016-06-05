@@ -1,6 +1,7 @@
 $(document).ready(function() {
     var $moveCount = 0;
     var $move = true;
+
     $("#winner").hide();
 
     var playerTurn = playerTurn || "x";
@@ -48,7 +49,7 @@ $(document).ready(function() {
                 $c3 === 'x' && $c6 === 'x' && $c9 === 'x' ||
                 $c1 === "x" && $c5 === 'x' && $c9 === 'x' ||
                 $c3 === 'x' && $c5 === 'x' && $c7 === 'x') {
-                $("#winner").text('X Won');
+                setInterval(blinker('X Won'),5000);
                 $move = false;
                 $moveCount = 0;
                 return;
@@ -61,8 +62,7 @@ $(document).ready(function() {
                 $c3 === 'o' && $c6 === 'o' && $c9 === 'o' ||
                 $c1 === "o" && $c5 === 'o' && $c9 === 'o' ||
                 $c3 === 'o' && $c5 === 'o' && $c7 === 'o') {
-                $("#winner").text('O Won');
-
+                setInterval(blinker('O Won'), 5000);
                 $move = false;
                 $moveCount = 0;
             return;
@@ -75,15 +75,8 @@ $(document).ready(function() {
     });
 
     function reset() {
-        $("#one").empty();
-        $("#two").empty();
-        $("#three").empty();
-        $("#four").empty();
-        $("#five").empty();
-        $("#six").empty();
-        $("#seven").empty();
-        $("#eight").empty();
-        $("#nine").empty();
+        $("#one, #two, #three, #four, #five, #six, #seven, #eight, #nine").empty();
+
         $("button").css({
             "background-color": "#2C2C2C"
         });
@@ -91,10 +84,13 @@ $(document).ready(function() {
         $move = true;
         $("#winner").hide();
         $("#winner").text('');
+    }
 
-    };
+    function blinker(x){
+        $("#winner").text(x).show();
+        $("#winner").fadeOut(500);
+        $("#winner").fadeIn(500);
 
-
-
+    }
 
 }); // end of document.ready()
